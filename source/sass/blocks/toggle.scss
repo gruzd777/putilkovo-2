@@ -1,0 +1,55 @@
+.toggle {
+  position: relative;
+  padding: 0;
+  border: none;
+  background: transparent;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+
+  &::before, &::after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: $basic_orange;
+    transition: all ease 0.3s;
+  }
+
+  &::before {
+    top: 10px;
+    left: 0;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    bottom: 8px;
+    left: 0;
+    transform: rotate(-45deg);
+  }
+}
+
+.toggle span {
+  display: none;
+  position: absolute;
+  width: 70%;
+  height: 2px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: $basic_orange;
+}
+
+.toggle--closed.toggle::before {
+  transform: rotate(0);
+  top: 0;
+}
+
+.toggle--closed.toggle::after {
+  transform: rotate(0);
+  bottom: 0;
+}
+
+.toggle--closed span {
+  display: inline-block;
+}

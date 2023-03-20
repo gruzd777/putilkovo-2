@@ -1,0 +1,29 @@
+.menu {
+
+}
+
+.menu__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menu__item {
+
+}
+
+.menu__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: $basic_white;
+
+  &:hover {
+    color: $basic_orange;
+  }
+}

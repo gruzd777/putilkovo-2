@@ -3,17 +3,141 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.min.css">
-    <!-- <link rel="preload" href="./fonts/jost-extrabold.woff" as="font" type="font/woff" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/jost-extrabold.woff2" as="font" type="font/woff2"crossorigin="anonymous">
-    <link rel="preload" href="./fonts/jost-regular.woff" as="font" type="font/woff" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/jost-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
-    <title>Starting template</title>
+    <link rel="preload" href="./fonts/mulishregular.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/mulishregular.woff2" as="font" type="font/woff2"crossorigin="anonymous">
+    <link rel="preload" href="./fonts/playbold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/playbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/playregular.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/playregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <title>Путилково - автосервис</title>
   </head>
   <body class="page-body">
-    <header class="page-header"></header>
-    <main class="page-main"></main>
-    <footer class="page-footer"></footer>
+    <header class="page-header">
+      <div class="page-header__logo">
+        <img class="page-header__img" src="./img/main-logo-mobile.svg" alt="Логотип автосервиса Путилково">
+      </div>
+        <div class="page-header__menu menu">
+          <nav class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">Услуги и цены</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Акции</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Контакты</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Отзывы</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Блог</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="page-header__toggle">
+          <button class="toggle" type="button" aria-label="Открыть/закрыть меню навигации">
+            <span></span>
+          </button>
+        </div>
+        <ul class="socials">
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg class="socials__icon socials__icon--wa" width="21" height="21">
+                <use href="./img/sprite.svg#icon-whatsapp"></use>
+              </svg>
+            </a></li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg class="socials__icon socials__icon--tg" width="24" height="20">
+                <use href="./img/sprite.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="tel:+78005558628" class="socials__link">
+              <svg class="socials__icon socials__icon--ph" width="26" height="25">
+                <use href="./img/sprite.svg#icon-phone"></use>
+              </svg>
+              <span class="socials__phone">+7-913-980-68-94</span>
+            </a>
+          </li>
+        </ul>
+    </header>
+    <main class="page-main">
+      <section class="promo">
+        <h1 class="promo__title">Автосервис Путилково</h1>
+        <p class="promo__subtitle">Качественный и быстрый ремонт автомобилей</p>
+        <a href="#" class="promo__link">Связаться</a>
+      </section>
+      <section class="advantages">
+        <h2 class="advantages__title title-2">Наши преимущества</h2>
+        <div class="advantages__pic">
+          <picture>
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/car-desktop.webp 1x, img/car-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="img/car.webp 1x, img/car@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="./img/car-desktop.jpg 1x, ./img/car-desktop.jpg 2x">
+            <img class="advantages__img" src="./img/car.jpg" srcset="./img/car@2x.jpg 2x" alt="Автомобиль на подъёмнике">
+          </picture>
+        </div>
+        <ul class="advantages__list">
+          <li class="advantages__item">гарантия на все работы</li>
+          <li class="advantages__item">кузовной ремонт любой сложности</li>
+          <li class="advantages__item">ремонт двигателей</li>
+          <li class="advantages__item">слесарные работы</li>
+          <li class="advantages__item">качественные материалы</li>
+          <li class="advantages__item">современное оборудование</li>
+        </ul>
+      </section>
+      <section class="promotion">
+        <h2 class="promotion__title title-2">Акционные предложения</h2>
+        <ul class="promotion__list">
+          <li class="promotion__item card">
+            <h3 class="card__title">Бесплатная проверка жидкостей</h3>
+            <p class="card__text">тормозная жидкость,<br> масло в двигателе,<br> масло в КПП,<br> антифриз.</p>
+          </li>
+          <li class="promotion__item card">
+            <h3 class="card__title">Ремонт ДВС с гарантией один год</h3>
+            <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/engine-desktop.webp 1x, img/engine-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/engine.webp 1x, img/engine@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="./img/engine-desktop.jpg, ./img/engine-desktop.jpg 2x" >
+              <img class="card__img" src="./img/engine.jpg" srcset="./img/engine.jpg 2x" alt="Двигатель">
+            </picture>
+            <p class="card__text">без ограничения пробега</p>
+          </li>
+          <li class="promotion__item card">
+            <h3 class="card__title">Бесплатная полировка фар</h3>
+            <p class="card__text">при окрасе от 3 деталей</p>
+          </li>
+          <li class="promotion__item card">
+            <h3 class="card__title">Онлайн оценка кузовного ремонта</h3>
+              <img class="card__img" src="./img/online.svg" width="" height="" alt="">
+              <div class="card__social">
+                <a href="#" class="card__social-link">
+                  <svg class="card__social-icon card__social-icon--wa" width="30" height="30">
+                    <use href="./img/sprite.svg#WhatsApp"></use>
+                  </svg>
+                </a>
+                <a href="#" class="card__social-link">
+                  <svg class="card__social-icon card__social-icon--tg" width="34" height="29">
+                    <use href="./img/sprite.svg#Telegram"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="page-footer">
+
+    </footer>
+    <script src="./js/script.min.js"></script>
   </body>
 </html>
+
+
